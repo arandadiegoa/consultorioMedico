@@ -12,4 +12,4 @@
 Desarrollo de una aplicación web para la gestión de pacientes y turnos en un consultorio médico.
 
 ## Conection BD
-Se encuentra en el archivo .env_public
+Se encuentra en el archivo .env.example
