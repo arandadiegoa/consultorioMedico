@@ -20,4 +20,9 @@ class PagesController extends Controller
     {
         return view('list');
     }
+
+      public function turn()
+    {
+        return view('turn');
+    }
 }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PatientsController;
+use App\Http\Controllers\TakeTurnController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,5 +28,5 @@ Route::put('/patients/{id}', [PatientsController::class, 'update'])->name('patie
 Route::delete('/patients/{id}', [PatientsController::class, 'destroy'])->name('patients.destroy');
 
 //Turns
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
-Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+Route::get('/takeTurn', [TakeTurnController::class, 'index'])->name('takeTurn');
+Route::post('/takeTurn', [TakeTurnController::class, 'store'])->name('takeTurn.store');

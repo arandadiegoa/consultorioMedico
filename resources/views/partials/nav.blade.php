@@ -18,6 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('list') ? 'active' : '' }}" href="{{ url('/list') }}">List</a>
                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link {{ request()->is('turn') ? 'active' : '' }}" href="{{ url('/turn') }}">Turns</a>
+                </li>
             </ul>
         </div>
     </div>
