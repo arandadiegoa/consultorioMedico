@@ -2,7 +2,7 @@
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
         <img src="{{ asset('img/icon.jpg') }}" alt="Logo" width="40" height="40" class="me-2">
-        Consultorio Médico</a>
+        Medical Clinic</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,10 +13,10 @@
                     <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('aboutUs') ? 'active' : '' }}" href="{{ url('/aboutUs') }}">About us</a>
+                    <a class="nav-link {{ request()->is('register') ? 'active' : '' }}" href="{{ url('/register') }}">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ url('/contact') }}">Contact</a>
+                    <a class="nav-link {{ request()->is('list') ? 'active' : '' }}" href="{{ url('/list') }}">List</a>
                 </li>
             </ul>
         </div>
