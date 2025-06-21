@@ -12,8 +12,10 @@
 Desarrollo de una aplicación web para la gestión de pacientes y turnos en un consultorio médico.
 
 ## Conection BD
-Se encuentra en el archivo .env.example.
-Se adjunta BD utilizada en el archivo database\bd
+
+Se encuentra en el archivo `.env.example`.
+
+Se adjunta la base de datos utilizada en el archivo `database/bd`.
 
 ## APP
 Al ininiar la app, aparececun sistema de registro, que al finalizar te direcciona a la lista de pacientes registrados. 
