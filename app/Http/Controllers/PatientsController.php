@@ -39,14 +39,14 @@ class PatientsController extends Controller
         //Update input
         $patient->update($request->only(['name', 'document_number', 'email', 'birthdate']));
         
-        return redirect()->route('patients.list')->with('success', "Successful patient update");
+        return redirect()->route('patients.list')->with('success', "Paciente actualizado");
     }
 
     //Delete
     public function destroy($id){
         $patient = Patient::findOrFail($id);
         $patient->delete();
-        return redirect()->route('patients.list')->with('success', "Successful patient delete");
+        return redirect()->route('patients.list')->with('success', "Paciente Eliminado");
     }
 
     //Dashboard

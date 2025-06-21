@@ -37,7 +37,7 @@ class TurnsController extends Controller
         //Update input
         $turn->update($request->only(['document_number', 'name', 'status']));
         
-        return redirect()->route('turns.list')->with('success', "Successful turn update");
+        return redirect()->route('turns.list')->with('success', "Turno actualizado");
     }
 
     
@@ -45,7 +45,7 @@ class TurnsController extends Controller
     public function destroy($id){
         $turn = Turn::findOrFail($id);
         $turn->delete();
-        return redirect()->route('turns.list')->with('success', "Successful turn delete");
+        return redirect()->route('turns.list')->with('success', "Turno Eliminado");
     }
 
 }

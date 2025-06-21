@@ -17,12 +17,13 @@
    
     <div class="min-vh-100 d-flex flex-column">
         <!--   {{-- Seccion principal del contenido --}} -->
+         @yield('title')
         <main class="flex-grow-1">
             @yield('content')
         </main>
 
         <!--  {{-- Footer global del contenido --}} -->
-        <footer>
+        <footer class="mt-3">
             @include('partials.footer')
         </footer>
     </div>

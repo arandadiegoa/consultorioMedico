@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-center my-4">Patient registration</h1>
+    <h1 class="text-center my-4">Registro de Pacientes</h1>
 
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -11,7 +11,7 @@
 
                     {{-- Name --}}
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
+                        <label for="name" class="form-label">Nombre:</label>
                         <input type="text" name="name" id="name" value="{{ old('name') }}"
                             class="form-control @error('name') is-invalid @enderror">
                         @error('name')
@@ -23,7 +23,7 @@
 
                     {{-- Document_number --}}
                     <div class="mb-3">
-                        <label for="document_number" class="form-label">Document number:</label>
+                        <label for="document_number" class="form-label">DNI:</label>
                         <input type="text" name="document_number" id="document_number"
                             value="{{ old('document_number') }}"
                             class="form-control @error('document_number') is-invalid @enderror">
@@ -48,7 +48,7 @@
 
                     {{-- phone --}}
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone:</label>
+                        <label for="phone" class="form-label">Teléfono:</label>
                         <input type="text" name="phone" id="phone" value="{{ old('phone') }}"
                             class="form-control @error('phone') is-invalid @enderror">
                         @error('phone')
@@ -60,7 +60,7 @@
 
                     {{-- birthdate --}}
                     <div class="mb-3">
-                        <label for="birthdate" class="form-label">Birthdate:</label>
+                        <label for="birthdate" class="form-label">Fecha de nacimiento:</label>
                         <input type="date" name="birthdate" id="birthdate"
                             class="form-control @error('birthdate') is-invalid @enderror">
                         @error('birthdate')
@@ -69,7 +69,7 @@
                             </div>
                         @enderror
                     </div>
-                    <div class="mt-5">
+                    <div class="mt-4">
                         <button type="submit" class="btn btn-primary w-100">Registrarse</button>
                     </div>
                 </form>

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container mt-5">
-    <h2 class="mb-4">Update Patient</h2>
+    <h2 class="mb-4">Editar Paciente</h2>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -14,7 +14,7 @@
 
         {{-- Nombre --}}
         <div class="mb-3">
-            <label for="name" class="form-label">Name:</label>
+            <label for="name" class="form-label">Nombre:</label>
             <input type="text" name="name" id="name" value="{{ old('name', $patient->name) }}"
                 class="form-control @error('name') is-invalid @enderror">
             @error('name')
@@ -24,7 +24,7 @@
 
         {{-- Document --}}
         <div class="mb-3">
-            <label for="document_number" class="form-label">Document number:</label>
+            <label for="document_number" class="form-label">DNI:</label>
             <input type="text" name="document_number" id="document_number" value="{{ old('document_number', $patient->document_number) }}"
                 class="form-control @error('document_number') is-invalid @enderror">
             @error('document_number')
@@ -44,7 +44,7 @@
 
         {{-- Phone --}}
         <div class="mb-3">
-            <label for="phone" class="form-label">Phone:</label>
+            <label for="phone" class="form-label">Teléfono:</label>
             <input type="text" name="phone" id="phone" value="{{ old('phone', $patient->phone) }}"
                 class="form-control @error('email') is-invalid @enderror">
             @error('phone')
@@ -54,7 +54,7 @@
 
            {{-- birthdate --}}
         <div class="mb-3">
-            <label for="phone" class="form-label">Phone:</label>
+            <label for="phone" class="form-label">Fecha de nacimiento:</label>
             <input type="date" name="birthdate" id="birthdate" value="{{ old('phone', $patient->birthdate) }}"
                 class="form-control @error('birthdate') is-invalid @enderror">
             @error('birthdate')
@@ -62,8 +62,8 @@
             @enderror
         </div>
 
-        <button type="submit" class="btn btn-primary">Update</button>
-        <a href="{{ route('patients.list') }}" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Editar</button>
+        <a href="{{ route('patients.list') }}" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
 @endsection
