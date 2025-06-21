@@ -7,8 +7,8 @@
 @section('content')
     <div class="container" style="display: flex; flex-direction:column; gap: 10px">
         <div>
-            <a class="btn btn-primary" href="/list" role="button">Pacientes</a>
-            <a class="btn btn-primary" href="listTurns" role="button">Turnos</a>
+            <a class="btn btn-primary" href="{{ route('patients.list') }}" role="button">Pacientes</a>
+            <a class="btn btn-primary" href="{{ route('turns.list') }}" role="button">Turnos</a>
         </div>
         @foreach ($patients as $patient)
             <div class="card mb-4">
