@@ -34,16 +34,16 @@
                         @enderror
                     </div>
 
-                    {{-- Status --}}
                     <div class="mb-3">
-                        <label for="status" class="form-label">Status:</label>
-                        <input type="text" name="status" id="status" value="{{ old('status') }}"
-                            class="form-control @error('status') is-invalid @enderror">
-                        @error('status')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                        @enderror
+                        <label for="status" class="form-label">State:</label>
+                        <select class="form-select" name="status" id="status">
+                            <option value="" disabled selected>Select</option>
+                            <option value="confirmado">confirmado
+                            </option>
+                            <option value="pendiente">pendiente
+                            </option>
+                            <option value="cancelado">cancelado</option>
+                        </select>
                     </div>
                     <div class="mt-5">
                         <button type="submit" class="btn btn-primary w-100">Save</button>

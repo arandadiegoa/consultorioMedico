@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Turn;
+
 
 class Patient extends Model
 {
@@ -18,6 +20,12 @@ class Patient extends Model
         'phone',
         'birthdate'
     ];
+
+    //DashBoard
+    public function turns()
+    {
+        return $this->hasMany(Turn::class, 'document_number', 'document_number');
+    }
     
     /**
      * Get the attributes that should be cast.

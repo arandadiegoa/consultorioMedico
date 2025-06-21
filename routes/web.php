@@ -7,7 +7,7 @@ use App\Http\Controllers\TakeTurnController;
 use App\Http\Controllers\TurnsController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('patients.register');
 });
 
 Route::get('/aboutUs', function () {
@@ -27,6 +27,9 @@ Route::get('/list', [PatientsController::class, 'list'])->name('patients.list');
 Route::get('/patients/{id}', [PatientsController::class, 'edit'])->name('patients.edit');
 Route::put('/patients/{id}', [PatientsController::class, 'update'])->name('patients.update');
 Route::delete('/patients/{id}', [PatientsController::class, 'destroy'])->name('patients.destroy');
+
+//Dashboard
+Route::get('/dashboard', [PatientsController::class, 'dashboard'])->name('dashboard');
 
 //Turns
 Route::get('/save', [TakeTurnController::class, 'index'])->name('save');

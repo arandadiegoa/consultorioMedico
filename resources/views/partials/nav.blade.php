@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/register') }}">
         <img src="{{ asset('img/icon.jpg') }}" alt="Logo" width="40" height="40" class="me-2">
         Medical Clinic</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
@@ -15,12 +15,9 @@
                  <li class="nav-item">
                     <a class="nav-link {{ request()->is('save') ? 'active' : '' }}" href="{{ url('/save') }}">Turns</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('list') ? 'active' : '' }}" href="{{ url('/list') }}">List Patients</a>
+                   <li class="nav-item">
+                    <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link {{ request()->is('listTurns') ? 'active' : '' }}" href="{{ url('/listTurns') }}">List Turns</a>
-                  </li>
             </ul>
         </div>
     </div>

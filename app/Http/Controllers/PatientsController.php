@@ -49,5 +49,12 @@ class PatientsController extends Controller
         return redirect()->route('patients.list')->with('success', "Successful patient delete");
     }
 
+    //Dashboard
+    public function dashboard()
+    {
+        $patients = \App\Models\Patient::with('turns')->get();
+        return view('dashboard', compact('patients'));
+    }
+
 
 }

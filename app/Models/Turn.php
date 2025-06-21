@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Patient;
 
 class Turn extends Model
 {
@@ -17,6 +18,11 @@ class Turn extends Model
         'status',
     ];
 
+     //DashBoard
+    public function patient()
+    {
+        return $this->hasMany(Patient::class, 'document_number', 'document_number');
+    }
     /**
      * Get the attributes that should be cast.
      *
