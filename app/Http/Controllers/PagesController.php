@@ -23,6 +23,6 @@ class PagesController extends Controller
 
       public function turn()
     {
-        return view('turn');
+        return view('listTurns');
     }
 }

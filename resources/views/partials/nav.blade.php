@@ -10,17 +10,17 @@
         <div class="collapse navbar-collapse" id="navbarContenido">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {{ request()->is('register') ? 'active' : '' }}" href="{{ url('/register') }}">Register</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('list') ? 'active' : '' }}" href="{{ url('/list') }}">List</a>
-                </li>
                  <li class="nav-item">
-                    <a class="nav-link {{ request()->is('turn') ? 'active' : '' }}" href="{{ url('/turn') }}">Turns</a>
+                    <a class="nav-link {{ request()->is('save') ? 'active' : '' }}" href="{{ url('/save') }}">Turns</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('list') ? 'active' : '' }}" href="{{ url('/list') }}">List Patients</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link {{ request()->is('listTurns') ? 'active' : '' }}" href="{{ url('/listTurns') }}">List Turns</a>
+                  </li>
             </ul>
         </div>
     </div>

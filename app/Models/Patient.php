@@ -18,7 +18,7 @@ class Patient extends Model
         'phone',
         'birthdate'
     ];
-
+    
     /**
      * Get the attributes that should be cast.
      *

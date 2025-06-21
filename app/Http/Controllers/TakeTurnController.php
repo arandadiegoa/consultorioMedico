@@ -9,7 +9,7 @@ class TakeTurnController extends Controller
 {
     public function index()
     {
-        return view('turns.takeTurn');
+        return view('turns.save');
     }
 
       public function store(Request $request)
@@ -17,27 +17,20 @@ class TakeTurnController extends Controller
         //Validate
         $request->validate([
             'document_number' => 'required|numeric|digits_between:7,8|exists:patients,document_number',
-            'date' => 'required|date|after_or_equal:today',
+            'date' => 'required|date|after_or_equal:today', //evita fechas pasadas
             'status' => 'required|in:pendiente,confirmado,cancelado',
+        ],[
+            'document_number.exists' => 'The document number is not registered as a patient.',
         ]);
 
         //insert a la tabla
         Turn::create([
-            'name' =>$request->name,
             'document_number'=>$request->document_number,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'birthdate' =>$request->birthdate,
+            'date' => $request->date,
+            'status' => $request->status,
         ]);
 
         // Redirigir con mensaje a la home
-        return redirect()->route('patients.list')->with('success', 'Paciente registrado correctamente.');
+        return redirect()->route('turns.list')->with('success', 'Turno registrado correctamente.');
     }
 }
-
-
-  protected $fillable = [
-        'document_number',
-        'date',
-        'status',
-    ];
