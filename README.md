@@ -18,10 +18,11 @@ Se encuentra en el archivo `.env.example`.
 Se adjunta la base de datos utilizada en el archivo `database/bd`.
 
 ## APP
-Al ininiar la app, aparececun sistema de registro, que al finalizar te direcciona a la lista de pacientes registrados. 
-Tambien podes agendar un turno, que cuenta con la misma función que el registro, una vez finalizado la carga del mismo, podés visualizar el listado de turnos.
-Ambos registros, cuentan con la función de Editar y Eliminar.
+Al iniciar la aplicación, se presenta un sistema de registro de pacientes. Una vez completado el registro, el usuario es redirigido automáticamente al listado de pacientes registrados.
+También es posible agendar turnos, con un proceso similar: al finalizar la carga del turno se muestra el listado correspondiente.
+Tanto los pacientes como los turnos pueden ser editados o eliminados desde sus respectivas listas.
 
 ## Dashboard
 Se crea un panel para poder visualizar los pacientes con sus turnos.
+
 Cuenta con acceso directo a pacientes y turnos.
