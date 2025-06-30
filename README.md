@@ -44,6 +44,7 @@ Se crea un panel para poder visualizar los pacientes con sus turnos.
 
 ---
 ✅ Requisitos
+
 PHP >= 8.x
 
 Composer
