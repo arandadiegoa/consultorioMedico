@@ -17,16 +17,6 @@ Se encuentra en el archivo `.env.example`.
 
 Se adjunta la base de datos utilizada en el archivo `database/bd`.
 
-## APP
-Al iniciar la aplicación, se presenta un sistema de registro de pacientes. Una vez completado el registro, el usuario es redirigido automáticamente al listado de pacientes registrados.
-También es posible agendar turnos, con un proceso similar: al finalizar la carga del turno se muestra el listado correspondiente.
-Tanto los pacientes como los turnos pueden ser editados o eliminados desde sus respectivas listas.
-
-## Dashboard
-Se crea un panel para poder visualizar los pacientes con sus turnos.
-
-Cuenta con acceso directo a pacientes y turnos.
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **Laravel**: Framework principal del proyecto.
@@ -48,6 +38,8 @@ Tras registrar un paciente, se redirige automáticamente al listado de pacientes
 Desde el menú también se puede acceder a la agenda de turnos, con flujo similar: carga ➝ listado.
 
 Los registros de pacientes y turnos se pueden editar o eliminar desde sus respectivas listas.
+
+Se crea un panel para poder visualizar los pacientes con sus turnos.
 
 ---
 ✅ Requisitos
