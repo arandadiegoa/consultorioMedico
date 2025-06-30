@@ -26,3 +26,35 @@ Tanto los pacientes como los turnos pueden ser editados o eliminados desde sus r
 Se crea un panel para poder visualizar los pacientes con sus turnos.
 
 Cuenta con acceso directo a pacientes y turnos.
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Laravel**: Framework principal del proyecto.
+- **PHP**: Lenguaje de programación backend.
+- **Blade**: Motor de plantillas para las vistas.
+- **Laragon**: Entorno de desarrollo local.
+- **MySQL**: Base de datos relacional.
+- **Migraciones**: Gestión de estructura de base de datos.
+
+---
+
+🖥️ Vista de la Aplicación
+Al iniciar la aplicación:
+
+Se muestra el formulario de registro de pacientes.
+
+Tras registrar un paciente, se redirige automáticamente al listado de pacientes.
+
+Desde el menú también se puede acceder a la agenda de turnos, con flujo similar: carga ➝ listado.
+
+Los registros de pacientes y turnos se pueden editar o eliminar desde sus respectivas listas.
+
+---
+✅ Requisitos
+PHP >= 8.x
+
+Composer
+
+MySQL
+
+Laragon o equivalente (XAMPP, MAMP, etc.)
