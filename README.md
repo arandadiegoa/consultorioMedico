@@ -29,6 +29,7 @@ Se adjunta la base de datos utilizada en el archivo `database/bd`.
 ---
 
 🖥️ Vista de la Aplicación
+
 Al iniciar la aplicación:
 
 Se muestra el formulario de registro de pacientes.
