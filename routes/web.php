@@ -14,10 +14,6 @@ Route::get('/aboutUs', function () {
     return view('aboutUs');
 });
 
-Route::get('/list', function () {
-    return view('patients.list');
-});
-
 //Patients
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');

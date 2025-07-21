@@ -46,7 +46,7 @@
         <div class="mb-3">
             <label for="phone" class="form-label">Teléfono:</label>
             <input type="text" name="phone" id="phone" value="{{ old('phone', $patient->phone) }}"
-                class="form-control @error('email') is-invalid @enderror">
+                class="form-control @error('phone') is-invalid @enderror">
             @error('phone')
                 <div class="invalid-feedback">{{ $message }}</div>
             @enderror
